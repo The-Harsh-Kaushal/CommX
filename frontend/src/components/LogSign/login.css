@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+}
+.Login .secondLayer {
+  width: 70%;
+  height: 70%;
+  background-color: rgb(241, 233, 233);
+  display: flex;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Subtle bottom shadow */
+}
+.Login .secondLayer .left {
+  flex: 0.7;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.Login .secondLayer .left .level2 {
+  width: 40%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .btn-disable{
+    display: none;
+  }
+}
+.Login .secondLayer .left .level2 .heading , .Login .secondLayer .right .level2 p{
+  display: flex;
+
+  font-size: 1.6rem;
+  font-family: "DM Serif Display", serif;
+}
+.Login .secondLayer .left .level2 .heading {
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.Login .left .level2 input {
+  border: none;
+  outline: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  margin-bottom: 20px;
+
+  font-family: "Nunito", sans-serif;
+  border-bottom: 1px solid rgba(143, 124, 124, 0.8);
+}
+.Login .left .level2 button {
+  margin-top: 40px;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.1rem;
+}
+
+.Login .secondLayer .right {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(hand.jpg);
+  
+  background-size: cover;
+  /* background-position-y: -100px; */
+  background-repeat: no-repeat;
+}
+.Login .secondLayer .right .level2 button {
+  margin-top: 40px;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.1rem;
+}
+
+.Login .secondLayer .right .level2 {
+  width: 80%;
+  height: 70%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+
+@media screen and (max-width:900px){
+
+ .Login{
+  .secondLayer{
+    .left{
+      flex: 1;
+      .level2{
+        width: 80%;
+        .btn-disable{
+          display: block;
+        }
+      }
+    }
+    .right{
+      display: none;
+    }
+  }
+ }
+}

@@ -1,0 +1,42 @@
+.CreateGroup {
+  flex: 0.7;
+  background-color: var(--light1);
+  margin: 10px 10px 8px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.CreateGroup .secondLayer {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  width: 70%;
+  border-radius: 20px;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.CreateGroup input {
+  border: none;
+  outline: 0px;
+  flex: 1;
+  opacity: 0.6;
+  font-size: 1.3rem;
+}
+
+/* dark mode */
+.darkCG{
+  background-color: var(--dark3) !important;
+  input{
+    background-color: var(--dark3) !important;
+    color: var(--light1) !important;
+    
+  }::placeholder{
+    color: white !important;
+
+  }
+  .IconTick{
+    color: var(--light1);
+  }
+}

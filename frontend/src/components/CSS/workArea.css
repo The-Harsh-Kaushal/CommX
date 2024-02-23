@@ -1,0 +1,195 @@
+.workArea_container {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px 8px;
+}
+.workArea_container .title {
+  background-color: white;
+  display: flex;
+  padding: 10px 5px 0px 15px;
+
+  border-radius: 10px;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.title .Icon {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color:  rgba(144, 169, 141);
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid  rgba(144, 169, 141);
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+.workArea_container .title .center{
+  flex: 1;
+}
+.workArea_container .title .center .conver-title{
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+.workArea_container .title .center .conver-time{
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-left: 5px;
+}
+/* chat area css */
+
+.chat-area {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px 0px;
+  padding: 20px;
+  flex: 1;
+  overflow: scroll;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.chat-area::-webkit-scrollbar{
+  display: none;
+}
+.MessageOther{
+  margin: 10px 0px;
+  max-height: 10vh;
+ 
+}
+
+.MessageOther .secondLayer{
+  display: inline-flex;
+    flex-direction: column;
+    max-width: 70%;
+    background-color: #f4f5f8;
+    border-radius: 5px;
+    padding: 7px 10px 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.MessageOther .top {
+  display: flex;
+  margin-bottom: 5px;
+}
+.MessageOther .top .IconContainer {
+  height: 100%;
+  /* width: 100%; */
+  margin-right: 10px;
+}
+.MessageOther .top .IconContainer .Icon {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: rgba(144, 169, 141);
+  border: 2px solid rgba(144, 169, 141);
+  box-sizing: border-box;
+  text-transform: uppercase;
+  
+}
+.MessageOther .top .conver-message {
+  font-size: 0.9rem;
+}
+
+.MessageOther .conver-time {
+  font-size: 0.6rem;
+  opacity: 0.9;
+  display: flex;
+  justify-content: right;
+}
+
+.MessageSelf{
+    display: flex;
+    justify-content: flex-end;
+}
+.MessageSelf .secondLayer{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    background-color: #B2EBF2;
+    border-radius: 5px;
+    padding: 7px 10px 0px 10px;
+    margin: 3px ;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.MessageSelf .secondLayer .bottom{
+  font-size: 0.6rem;
+  opacity: 0.9;
+  display: flex;
+  justify-content: right;
+  margin-top: 5px;
+}
+
+/* text-input area */
+
+.tex-input {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 8vh;
+  border-radius: 10px;
+  padding: 8px;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.tex-input input {
+  border: none;
+  outline: 0px;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* dark mode */
+.darkWAC{
+  .Icon{
+     background-color: var(--dark3) !important;
+     border-color: var(--light1) !important;
+     color: var(--light1) !important;
+  }
+  .LargeIcon{
+    color: var(--light1) !important;
+  }
+  .title{
+    background-color: var(--dark3)  !important;
+    color: var(--light1) !important;
+
+  }
+
+  .chat-area{
+    background-color: var(--dark3) !important;           
+  }
+  .MessageOther{
+    .secondLayer{
+      background-color: var(--dark4) !important;           
+      color: var(--light1) !important;
+
+    }
+    
+  }
+  .MessageSelf{
+    .secondLayer{
+      background-color: var(--dark1)  !important;
+      color: var(--light1) !important;
+    }
+  }
+  .tex-input{
+    background-color: var(--dark1)  !important;
+    input{
+      background-color: var(--dark1)  !important;
+    }::placeholder{
+      color: var(--light1) !important;
+    }
+  }
+}

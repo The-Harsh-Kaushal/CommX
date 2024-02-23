@@ -1,0 +1,133 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.Sidebar_container {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.person {
+  border-radius: 10px;
+  margin: 10px 10px 8px;
+  background-color: var(--light1);
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.search {
+  border-radius: 10px;
+  margin: 5px 10px;
+  padding: 0px 8px;
+  background-color: var(--light1);
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.search input {
+  border: none;
+  outline: 0px;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  width: 100%;
+}
+.conversations {
+  border-radius: 10px;
+  margin: 5px 10px 10px;
+  background-color: var(--light1);
+  flex: 1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* conversation iteam */
+.conv-iteam {
+  background-color: rgba(245, 245, 245, 0.726);
+ display: flex;
+ margin: 8px;
+ padding: 3px;
+ border-radius: 12px;
+ gap: 5px;
+ box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.conv-iteam .left {
+  font-size: 1.4rem; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: rgba(144, 169, 141);
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid rgba(144, 169, 141);
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+.conv-iteam .mid{
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  flex: 1;
+}
+.conv-iteam .mid .nameTitle{
+  font-size: 0.9rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  
+}
+.conv-iteam .mid .msg{
+   font-size: 0.6rem;
+   margin-left: 5px;
+}
+
+
+.conv-iteam .right{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 0.6rem;
+  opacity: 0.9;
+  margin-right: 5px;
+}
+
+.LargeIcon {
+  width: 1.6rem !important ;
+  height: 1.6rem !important;
+}
+.dark_mode_sidebar{
+  .LargeIcon{
+    color: var(--light2) !important;
+   }
+  .person {
+     background-color: var(--dark3) !important;
+    }
+    .search{
+    background-color: var(--dark3) !important ;
+    input{
+      background-color: var(--dark3) !important ;
+      color: var(--light2) !important;
+    }
+    input::placeholder{
+      color: var(--light1) !important;
+    }
+  }
+  
+  .conversations{
+    background-color: var(--dark3) !important ;
+    .conv-iteam{
+      background-color: var(--dark4) !important;
+      .left{
+        background-color: var(--dark3) !important ;
+        border-color: var(--light1) !important;
+        color: var(--light1) !important;
+      }
+      .mid{
+        color: var(--light1) !important;
+      }
+      .right{
+        color: var(--light1) !important;
+      }
+    }
+  }
+}

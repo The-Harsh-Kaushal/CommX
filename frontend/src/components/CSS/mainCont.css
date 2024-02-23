@@ -1,0 +1,11 @@
+.mainContainer{
+    width: 90vw;
+    height: 90vh;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    background-color: rgba(168, 167, 162, 0.726);
+}
+.darkMC{
+    background-color: var(--dark1) !important;
+}
