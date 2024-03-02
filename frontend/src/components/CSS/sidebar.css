@@ -16,6 +16,9 @@
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.person2{
+  display: none;
+}
 .search {
   border-radius: 10px;
   margin: 5px 10px;
@@ -129,5 +132,35 @@
         color: var(--light1) !important;
       }
     }
+  }
+}
+
+/* responsive */
+
+@media screen and (max-width:942px){
+  .Sidebar_container{
+    flex: 0.1;
+    .person{
+      
+      padding-top: 30px;
+      flex-direction: column;
+      height: 100%;
+      justify-content:flex-start;
+      gap: 50px;
+    }
+    
+    .search{
+      display: none;
+    }
+    .conversations{
+      display: none;
+    }
+  }
+  .Show_Sidebar{
+    
+    /* z-index: 100; */
+
+    /* background-color: black; */
+   
   }
 }

@@ -40,3 +40,16 @@
     color: var(--light1);
   }
 }
+
+@media screen and (max-width: 942px) {
+  .CreateGroup{
+    flex: 0.9;
+    .secondLayer{
+      width: 100%;
+     
+      input{
+        width: 100px;
+      }
+    }
+  }
+}

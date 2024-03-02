@@ -18,6 +18,7 @@
   align-items: center;
   justify-content: center;
   
+  
 }
 .dark{
   background-color: var(--dark2) !important;

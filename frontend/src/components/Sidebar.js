@@ -15,7 +15,16 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
 export default function Sidebar() {
- const DarkMode =  useSelector((state)=>state.themekey);
+  const DarkMode = useSelector((state) => state.themekey);
+  const [SShow, SToggle] = useState({
+    open: false,
+  });
+  const SShowToggle = () => {
+    SToggle({
+      open: !SShow.open,
+    });
+    console.log(SShow);
+  };
   const dispatch = useDispatch();
   const [conversations, SetConversations] = useState([
     {
@@ -39,45 +48,64 @@ export default function Sidebar() {
   ]);
   const navigate = useNavigate();
   return (
-    <div className={"Sidebar_container" + (DarkMode ? "": " dark_mode_sidebar")}>
+    <div
+      className={
+        "Sidebar_container" +
+        (DarkMode ? "" : " dark_mode_sidebar") +
+        (SShow.open ? " Show_Sidebar" : "")
+      }
+    >
       <div className="person">
         <div>
-          <IconButton>
+          <IconButton onClick={SShowToggle}>
             <AccountCircleIcon className="LargeIcon" />
           </IconButton>
         </div>
 
         <div>
-          <IconButton onClick={()=>{navigate('User')}}>
-            <PersonAddIcon className="LargeIcon"/>
+          <IconButton
+            onClick={() => {
+              navigate("User");
+            }}
+          >
+            <PersonAddIcon className="LargeIcon" />
           </IconButton>
-          <IconButton onClick={()=>{navigate('groups')}}>
-            <GroupAddIcon className="LargeIcon"/>
+          <IconButton
+            onClick={() => {
+              navigate("groups");
+            }}
+          >
+            <GroupAddIcon className="LargeIcon" />
           </IconButton>
-          <IconButton onClick={()=>{navigate('Create-Group')}}>
+          <IconButton
+            onClick={() => {
+              navigate("Create-Group");
+            }}
+          >
             <AddCircleOutlineIcon className="LargeIcon" />
           </IconButton>
-          <IconButton  onClick={()=>{
-            dispatch(toggleTheme())
-          }} >
-            <NightlightIcon className="LargeIcon"/>
+          <IconButton
+            onClick={() => {
+              dispatch(toggleTheme());
+            }}
+          >
+            <NightlightIcon className="LargeIcon" />
           </IconButton>
         </div>
       </div>
+
+
       <div className="search">
-        <IconButton >
-          <SearchIcon className="LargeIcon"/>
+        <IconButton>
+          <SearchIcon className="LargeIcon" />
         </IconButton>
         <input placeholder="search" />
       </div>
       <div className="conversations">
-  {conversations.map((conversation) => (
-    <ConversationIteam
-    key={conversation.name} 
-    />
-  ))}
-</div>
-
+        {conversations.map((conversation) => (
+          <ConversationIteam key={conversation.name} />
+        ))}
+      </div>
     </div>
   );
 }

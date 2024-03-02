@@ -122,3 +122,16 @@ text-transform: uppercase;
 
    }
 }
+
+
+@media screen and (max-width: 942px) {
+  .Group{
+    flex: 0.9;
+    .searchBar{
+      display: flex;
+      input{
+        width: 100px;
+      }
+    }
+  }
+}
