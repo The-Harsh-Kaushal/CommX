@@ -8,9 +8,9 @@ import MessageSelf from "./MessageSelf";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 export default function WorkArea() {
-  const DarkMode =  useSelector((state)=>state.themekey);
+  const DarkMode = useSelector((state) => state.themekey);
   return (
-    <div className={"workArea_container"+ (DarkMode?"":" darkWAC")}>
+    <div className={"workArea_container" + (DarkMode ? "" : " darkWAC")}>
       <div className="title">
         <p className="Icon">t</p>
         <div className="center">
@@ -31,7 +31,7 @@ export default function WorkArea() {
       <div className="tex-input">
         <input type="text" placeholder="Type a message"></input>
         <IconButton>
-          <SendIcon className="LargeIcon"/>
+          <SendIcon className="LargeIcon" />
         </IconButton>
       </div>
     </div>

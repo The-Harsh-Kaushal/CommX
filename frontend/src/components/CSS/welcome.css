@@ -30,19 +30,19 @@
 
 @media screen and (max-width: 942px) {
   .Welcome {
-   flex: 0.9;
-   justify-content: center;
-   gap: 100px;
-   img{
-    width: 250px;
-    height: 250px;
-   }
-   .text{
-    width: 80%;
+    flex: 0.9;
     justify-content: center;
-    align-items: center;
-    font-size: 1.3rem;
-    line-height: 1.2em;
-   }
+    gap: 100px;
+    img {
+      width: 250px;
+      height: 250px;
+    }
+    .text {
+      width: 80%;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      line-height: 1.2em;
+    }
   }
 }

@@ -4,8 +4,8 @@ export default function MessageSelf(props) {
   return (
     <div className="MessageSelf">
       <div className="secondLayer">
-      <div className="top">{props.message}</div>
-      <div className="bottom">{props.timeStamp}</div>
+        <div className="top">{props.message}</div>
+        <div className="bottom">{props.timeStamp}</div>
       </div>
     </div>
   );

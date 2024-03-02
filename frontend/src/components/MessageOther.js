@@ -3,7 +3,7 @@ import "./CSS/workArea.css";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 export default function MessageOther(props) {
-  const DarkMode =  useSelector((state)=>state.themekey);
+  const DarkMode = useSelector((state) => state.themekey);
   return (
     <div className="MessageOther">
       <div className="secondLayer">

@@ -1,25 +1,23 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-:root{
+:root {
   --dark1: #353839;
-  --dark2: #0E0E10;
+  --dark2: #0e0e10;
   --dark3: #696969;
   --dark4: #464545;
-  --light1: #FFFAFA;
-  --light2: #FFFFF0;
+  --light1: #fffafa;
+  --light2: #fffff0;
 }
-.App{
+.App {
   background-color: var(--light2);
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  
 }
-.dark{
+.dark {
   background-color: var(--dark2) !important;
 }

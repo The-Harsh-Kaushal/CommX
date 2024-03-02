@@ -12,30 +12,29 @@
   border-radius: 10px;
   gap: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
 }
 .title .Icon {
   font-size: 1.8rem;
   font-weight: bold;
-  color:  rgba(144, 169, 141);
+  color: rgba(144, 169, 141);
   text-align: center;
   width: 50px;
   height: 50px;
   line-height: 50px;
   border-radius: 50%;
   background-color: #fff;
-  border: 2px solid  rgba(144, 169, 141);
+  border: 2px solid rgba(144, 169, 141);
   box-sizing: border-box;
   text-transform: uppercase;
 }
-.workArea_container .title .center{
+.workArea_container .title .center {
   flex: 1;
 }
-.workArea_container .title .center .conver-title{
+.workArea_container .title .center .conver-title {
   text-transform: capitalize;
   font-size: 1.5rem;
 }
-.workArea_container .title .center .conver-time{
+.workArea_container .title .center .conver-time {
   text-transform: capitalize;
   font-size: 0.9rem;
   opacity: 0.9;
@@ -51,25 +50,23 @@
   flex: 1;
   overflow: scroll;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
 }
-.chat-area::-webkit-scrollbar{
+.chat-area::-webkit-scrollbar {
   display: none;
 }
-.MessageOther{
+.MessageOther {
   margin: 10px 0px;
   max-height: 10vh;
- 
 }
 
-.MessageOther .secondLayer{
+.MessageOther .secondLayer {
   display: inline-flex;
-    flex-direction: column;
-    max-width: 70%;
-    background-color: #f4f5f8;
-    border-radius: 5px;
-    padding: 7px 10px 0px 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  flex-direction: column;
+  max-width: 70%;
+  background-color: #f4f5f8;
+  border-radius: 5px;
+  padding: 7px 10px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .MessageOther .top {
   display: flex;
@@ -93,7 +90,6 @@
   border: 2px solid rgba(144, 169, 141);
   box-sizing: border-box;
   text-transform: uppercase;
-  
 }
 .MessageOther .top .conver-message {
   font-size: 0.9rem;
@@ -106,21 +102,21 @@
   justify-content: right;
 }
 
-.MessageSelf{
-    display: flex;
-    justify-content: flex-end;
+.MessageSelf {
+  display: flex;
+  justify-content: flex-end;
 }
-.MessageSelf .secondLayer{
-    display: flex;
-    flex-direction: column;
-    max-width: 90%;
-    background-color: #B2EBF2;
-    border-radius: 5px;
-    padding: 7px 10px 0px 10px;
-    margin: 3px ;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+.MessageSelf .secondLayer {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  background-color: #b2ebf2;
+  border-radius: 5px;
+  padding: 7px 10px 0px 10px;
+  margin: 3px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-.MessageSelf .secondLayer .bottom{
+.MessageSelf .secondLayer .bottom {
   font-size: 0.6rem;
   opacity: 0.9;
   display: flex;
@@ -139,7 +135,6 @@
   padding: 8px;
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
 }
 .tex-input input {
   border: none;
@@ -150,45 +145,42 @@
   color: rgba(0, 0, 0, 0.7);
 }
 
-
 /* dark mode */
-.darkWAC{
-  .Icon{
-     background-color: var(--dark3) !important;
-     border-color: var(--light1) !important;
-     color: var(--light1) !important;
-  }
-  .LargeIcon{
+.darkWAC {
+  .Icon {
+    background-color: var(--dark3) !important;
+    border-color: var(--light1) !important;
     color: var(--light1) !important;
   }
-  .title{
-    background-color: var(--dark3)  !important;
+  .LargeIcon {
     color: var(--light1) !important;
-
+  }
+  .title {
+    background-color: var(--dark3) !important;
+    color: var(--light1) !important;
   }
 
-  .chat-area{
-    background-color: var(--dark3) !important;           
+  .chat-area {
+    background-color: var(--dark3) !important;
   }
-  .MessageOther{
-    .secondLayer{
-      background-color: var(--dark4) !important;           
-      color: var(--light1) !important;
-
-    }
-    
-  }
-  .MessageSelf{
-    .secondLayer{
-      background-color: var(--dark1)  !important;
+  .MessageOther {
+    .secondLayer {
+      background-color: var(--dark4) !important;
       color: var(--light1) !important;
     }
   }
-  .tex-input{
-    background-color: var(--dark1)  !important;
-    input{
-      background-color: var(--dark1)  !important;
-    }::placeholder{
+  .MessageSelf {
+    .secondLayer {
+      background-color: var(--dark1) !important;
+      color: var(--light1) !important;
+    }
+  }
+  .tex-input {
+    background-color: var(--dark1) !important;
+    input {
+      background-color: var(--dark1) !important;
+    }
+    ::placeholder {
       color: var(--light1) !important;
     }
   }

@@ -4,8 +4,11 @@ import { useNavigate } from "react-router-dom";
 export default function ConversationItem(props) {
   const navigate = useNavigate();
   return (
-    <div className="conv-iteam"
-    onClick={()=>{navigate('ChatArea')}}
+    <div
+      className="conv-iteam"
+      onClick={() => {
+        navigate("ChatArea");
+      }}
     >
       <div className="left">{props.name ? props.name[0] : ""}</div>
 

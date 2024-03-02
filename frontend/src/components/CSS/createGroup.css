@@ -26,28 +26,27 @@
 }
 
 /* dark mode */
-.darkCG{
+.darkCG {
   background-color: var(--dark3) !important;
-  input{
+  input {
     background-color: var(--dark3) !important;
     color: var(--light1) !important;
-    
-  }::placeholder{
-    color: white !important;
-
   }
-  .IconTick{
+  ::placeholder {
+    color: white !important;
+  }
+  .IconTick {
     color: var(--light1);
   }
 }
 
 @media screen and (max-width: 942px) {
-  .CreateGroup{
+  .CreateGroup {
     flex: 0.9;
-    .secondLayer{
+    .secondLayer {
       width: 100%;
-     
-      input{
+
+      input {
         width: 100px;
       }
     }

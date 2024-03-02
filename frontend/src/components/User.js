@@ -7,9 +7,9 @@ import OnlineUserHelper from "./OnlineUserHelper";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 export default function User() {
-  const DarkMode =  useSelector((state)=>state.themekey);
+  const DarkMode = useSelector((state) => state.themekey);
   return (
-    <div className={"OnlineUser"+(DarkMode?"":" darkOU")}>
+    <div className={"OnlineUser" + (DarkMode ? "" : " darkOU")}>
       <div className="header">
         <img src={liveChat}></img>
         <h1>Online Users</h1>
@@ -21,15 +21,15 @@ export default function User() {
         <input placeholder="search" />
       </div>
       <div className="OnlineUC">
-        <OnlineUserHelper/>
-        <OnlineUserHelper/>
-        <OnlineUserHelper/>
-        <OnlineUserHelper/>
-        <OnlineUserHelper/>
-        <OnlineUserHelper/>
-        <OnlineUserHelper/>
-        <OnlineUserHelper/>
-        <OnlineUserHelper/>
+        <OnlineUserHelper />
+        <OnlineUserHelper />
+        <OnlineUserHelper />
+        <OnlineUserHelper />
+        <OnlineUserHelper />
+        <OnlineUserHelper />
+        <OnlineUserHelper />
+        <OnlineUserHelper />
+        <OnlineUserHelper />
       </div>
     </div>
   );

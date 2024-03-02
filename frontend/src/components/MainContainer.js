@@ -5,9 +5,9 @@ import Sidebar from "./Sidebar";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 export default function MainContainer() {
-  const DarkMode =  useSelector((state)=>state.themekey);
+  const DarkMode = useSelector((state) => state.themekey);
   return (
-    <div className={"mainContainer"+ (DarkMode?"":" darkMC")}>
+    <div className={"mainContainer" + (DarkMode ? "" : " darkMC")}>
       <Sidebar />
 
       <Outlet />

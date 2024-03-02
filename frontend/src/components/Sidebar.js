@@ -94,7 +94,6 @@ export default function Sidebar() {
         </div>
       </div>
 
-
       <div className="search">
         <IconButton>
           <SearchIcon className="LargeIcon" />

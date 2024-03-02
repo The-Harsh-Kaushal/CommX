@@ -28,7 +28,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .Login .secondLayer .left .level2 {
   width: 40%;
@@ -36,11 +35,12 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  .btn-disable{
+  .btn-disable {
     display: none;
   }
 }
-.Login .secondLayer .left .level2 .heading , .Login .secondLayer .right .level2 p{
+.Login .secondLayer .left .level2 .heading,
+.Login .secondLayer .right .level2 p {
   display: flex;
 
   font-size: 1.6rem;
@@ -71,7 +71,7 @@
   align-items: center;
   justify-content: center;
   background-image: url(hand.jpg);
-  
+
   background-size: cover;
   /* background-position-y: -100px; */
   background-repeat: no-repeat;
@@ -89,25 +89,23 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- 
 }
 
-@media screen and (max-width:900px){
-
- .Login{
-  .secondLayer{
-    .left{
-      flex: 1;
-      .level2{
-        width: 80%;
-        .btn-disable{
-          display: block;
+@media screen and (max-width: 900px) {
+  .Login {
+    .secondLayer {
+      .left {
+        flex: 1;
+        .level2 {
+          width: 80%;
+          .btn-disable {
+            display: block;
+          }
         }
       }
-    }
-    .right{
-      display: none;
+      .right {
+        display: none;
+      }
     }
   }
- }
 }
