@@ -1,10 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import { motion }from "framer-motion"
 export default function ConversationItem(props) {
   const navigate = useNavigate();
   return (
-    <div
+    <motion.div whileHover={{scale: 1.01}} whileTap={{scale: 0.98 }}
       className="conv-iteam"
       onClick={() => {
         navigate("ChatArea");
@@ -17,7 +17,7 @@ export default function ConversationItem(props) {
         <div className="msg">{props.LastMsg}</div>
       </div>
       <div className="right">{props.TimeStamp}</div>
-    </div>
+    </motion.div>
   );
 }
 

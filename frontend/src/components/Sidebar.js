@@ -13,7 +13,8 @@ import { IconButton } from "@mui/material";
 import { toggleTheme } from "../features/ThemeSlice";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-
+import {motion} from "framer-motion";
+import { Scale } from "@mui/icons-material";
 export default function Sidebar() {
   const DarkMode = useSelector((state) => state.themekey);
   const [SShow, SToggle] = useState({
