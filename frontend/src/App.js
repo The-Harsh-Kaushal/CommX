@@ -7,6 +7,7 @@ import CreateGroup from "./components/CreateGroup";
 import WorkArea from "./components/WorkArea";
 import User from "./components/User";
 import Group from "./components/Group";
+import SignUp from "./components/LogSign/SignUp";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -16,6 +17,7 @@ function App() {
     <div className={"App " + (DarkMode ? "" : "dark")}>
       <Routes>
         <Route path="/" element={<Login />}></Route>
+        <Route path="/signup" element={<SignUp/>}></Route>
         <Route path="app" element={<MainContainer />}>
           <Route path="" element={<Welcome />} />
           <Route path="Create-Group" element={<CreateGroup />} />
