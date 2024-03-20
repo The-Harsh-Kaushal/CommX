@@ -9,7 +9,7 @@ dotenv.config();
 App.use(express.json());
 App.use(cors());
 App.use('/user',require('./Routes/Auth'));
-
+App.use('/Chat',require('./Routes/chatsRoute'));
   
 const connectDB = async()=>{
 try{
