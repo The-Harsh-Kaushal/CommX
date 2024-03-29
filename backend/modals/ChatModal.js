@@ -23,5 +23,5 @@ GroupAdmin: {
 }
 );
 
-const Chat = mongoose.Schema("Chat",ChatModel);
+const Chat = mongoose.model("Chat",ChatModel);
 module.exports = Chat;
